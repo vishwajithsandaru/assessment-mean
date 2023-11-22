@@ -1,0 +1,63 @@
+<div class="root-container">
+  <mat-card class="signin">
+    <form
+      class="root-form"
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+    >
+      <mat-card-header>
+        <mat-card-title class="header-text">Sign In</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-form-field class="input-field">
+          <mat-label>Username</mat-label>
+          <input
+            type="text"
+            class="form-control"
+            name="username"
+            [(ngModel)]="form.username"
+            required="true"
+            #username="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+            matInput
+          />
+        </mat-form-field>
+
+        <mat-form-field class="input-field">
+          <mat-label>Password</mat-label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            [(ngModel)]="form.password"
+            required="true"
+            #password="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
+            matInput
+          />
+        </mat-form-field>
+
+        <mat-divider></mat-divider>
+
+        <div *ngIf="error" class="gen-error">
+          <mat-error>{{ errorMsg }}</mat-error>
+        </div>
+
+        <div id="forgot-pwd-container"><a>Forgot Password?</a></div>
+      </mat-card-content>
+      <mat-card-actions class="actions-root">
+        <button class="action-btn" mat-raised-button color="primary">
+          Sign In
+        </button>
+      </mat-card-actions>
+      <mat-card-footer>
+        <div id="accnt-reg-container">
+          Don't have an account? <a href="/signup">Register</a>
+        </div>
+        <!-- <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
+      </mat-card-footer>
+    </form>
+  </mat-card>
+</div>

@@ -1,0 +1,91 @@
+@media screen and (min-width: 400px) {
+    .root-container {
+        .signin{
+            width: 80%;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 750px) {
+    .root-container {
+        .signin{
+            width: 50%;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .root-container {
+        .signin{
+            width: 45%;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1500px) {
+    .root-container {
+        .signin{
+            width: 20%;
+        }
+    }
+    
+}
+
+
+.root-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.signin{
+    width: 90%;
+}
+
+.header-text{
+    margin-bottom: 20px;
+}
+
+.input-field{
+    width: 100%;
+}
+
+.actions-root{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.action-btn{
+    width: 100%;
+}
+
+#forgot-pwd-container{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#accnt-reg-container{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.details-view{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#email-txt{
+    margin-top: -27px;
+    margin-left: 25px;
+}
+
+.actions-root{
+    padding-bottom: 20px;
+}

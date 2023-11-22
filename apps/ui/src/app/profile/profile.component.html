@@ -1,0 +1,24 @@
+<div class="root-container">
+    <mat-card class="signin">
+      <mat-card-header>
+        <mat-card-title class="header-text">Hello {{username}} !!</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        
+        <div class="details-view">
+
+            <mat-icon aria-hidden="false" aria-label="Email Icon" fontIcon="email"></mat-icon> <p id="email-txt">  &nbsp;&nbsp;{{email}}</p>
+
+        </div>
+  
+        <mat-divider></mat-divider>
+  
+        <div id="forgot-pwd-container"></div>
+  
+      </mat-card-content>
+      <mat-card-actions class="actions-root">
+        <button class="action-btn" mat-raised-button color="primary" (click)="signOut()">Sign Out</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
